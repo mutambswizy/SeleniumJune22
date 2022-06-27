@@ -6,7 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class SeleniumEx1Q3 {
 
@@ -16,8 +17,8 @@ public class SeleniumEx1Q3 {
 
     @Before
     public void Setup() throws InterruptedException {
-        WebDriverManager.firefoxdriver().setup();
-        driver= new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver= new ChromeDriver();
         baseURL="https://datamateinc.com/";
         driver.manage().window().maximize();
 
