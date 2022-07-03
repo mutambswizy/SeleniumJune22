@@ -16,7 +16,7 @@ public class SeleniumEx1Q5 {
 
 
     @Before
-    public void Setup() throws InterruptedException {
+    public void Setup()  {
         WebDriverManager.firefoxdriver().setup();
         driver= new FirefoxDriver();
         baseURL="https://www.datamate.co.za/registration/";
